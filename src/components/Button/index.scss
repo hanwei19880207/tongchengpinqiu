@@ -1,0 +1,46 @@
+.yq-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999rpx;
+  font-weight: 600;
+  transition: opacity 0.2s;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &--primary {
+    background: #7EB8DA;
+    color: #FFFFFF;
+  }
+
+  &--secondary {
+    background: #EDF4F8;
+    color: #7EB8DA;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 2rpx solid #F0EDEB;
+    color: #636E72;
+  }
+
+  &--large {
+    height: 96rpx;
+    padding: 0 48rpx;
+    font-size: 32rpx;
+  }
+
+  &--medium {
+    height: 72rpx;
+    padding: 0 36rpx;
+    font-size: 28rpx;
+  }
+
+  &--small {
+    height: 56rpx;
+    padding: 0 28rpx;
+    font-size: 24rpx;
+  }
+}

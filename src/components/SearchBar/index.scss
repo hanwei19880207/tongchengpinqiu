@@ -1,0 +1,20 @@
+.yq-search {
+  display: flex;
+  align-items: center;
+  height: 76rpx;
+  padding: 0 24rpx;
+  background: #FFFFFF;
+  border-radius: 9999rpx;
+  box-shadow: 0 2rpx 16rpx rgba(45, 52, 54, 0.04);
+
+  &__icon {
+    font-size: 28rpx;
+    margin-right: 12rpx;
+  }
+
+  &__input {
+    flex: 1;
+    font-size: 28rpx;
+    color: #2D3436;
+  }
+}

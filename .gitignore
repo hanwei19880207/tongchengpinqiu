@@ -1,0 +1,6 @@
+node_modules/
+dist/
+miniapp/
+.DS_Store
+.swc/
+project.private.config.json

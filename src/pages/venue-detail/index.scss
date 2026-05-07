@@ -1,0 +1,271 @@
+.venue-detail {
+  min-height: 100vh;
+  background: #FAF9F7;
+  padding-bottom: calc(140rpx + env(safe-area-inset-bottom));
+
+  .loading {
+    padding: 200rpx 0;
+    text-align: center;
+    color: #B2BEC3;
+    font-size: 28rpx;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 440rpx;
+
+    .swiper-img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__body {
+    padding: 32rpx 24rpx;
+  }
+
+  &__name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24rpx;
+
+    .venue-name {
+      font-size: 38rpx;
+      font-weight: 700;
+      color: #2D3436;
+      flex: 1;
+    }
+
+    .fav-btn {
+      width: 64rpx;
+      height: 64rpx;
+      border-radius: 9999rpx;
+      background: #F0EDEB;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32rpx;
+      color: #B2BEC3;
+      flex-shrink: 0;
+
+      &--active {
+        background: #FDF0F3;
+        color: #E74C6F;
+      }
+    }
+  }
+
+  &__rating-card {
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    padding: 28rpx;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+    margin-bottom: 28rpx;
+
+    .rating-big {
+      display: flex;
+      align-items: center;
+      gap: 20rpx;
+      margin-bottom: 24rpx;
+      padding-bottom: 24rpx;
+      border-bottom: 2rpx solid #F0EDEB;
+
+      .rating-score {
+        font-size: 64rpx;
+        font-weight: 700;
+        color: #7EB8DA;
+      }
+
+      .rating-stars {
+        display: flex;
+        flex-direction: column;
+        gap: 4rpx;
+
+        .stars {
+          font-size: 24rpx;
+          color: #F9D88D;
+        }
+
+        .review-count {
+          font-size: 22rpx;
+          color: #B2BEC3;
+        }
+      }
+    }
+
+    .rating-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 16rpx;
+
+      .bar-row {
+        display: flex;
+        align-items: center;
+        gap: 12rpx;
+      }
+
+      .bar-label {
+        font-size: 24rpx;
+        color: #B2BEC3;
+        width: 72rpx;
+        flex-shrink: 0;
+      }
+
+      .bar-track {
+        flex: 1;
+        height: 12rpx;
+        background: #F0EDEB;
+        border-radius: 9999rpx;
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        height: 100%;
+        background: #7EB8DA;
+        border-radius: 9999rpx;
+
+        &--green {
+          background: #B8D8BA;
+        }
+        &--purple {
+          background: #C3B1E1;
+        }
+      }
+
+      .bar-num {
+        font-size: 26rpx;
+        font-weight: 700;
+        color: #2D3436;
+        width: 56rpx;
+        text-align: right;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__info {
+    background: #FFFFFF;
+    border-radius: 20rpx;
+    padding: 24rpx;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+    margin-bottom: 28rpx;
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      padding: 16rpx 0;
+      border-bottom: 2rpx solid #F0EDEB;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .info-icon {
+      font-size: 28rpx;
+      margin-right: 16rpx;
+    }
+
+    .info-text {
+      font-size: 26rpx;
+      color: #2D3436;
+      flex: 1;
+
+      &--link {
+        color: #7EB8DA;
+      }
+    }
+
+    .info-nav {
+      font-size: 24rpx;
+      color: #7EB8DA;
+      flex-shrink: 0;
+    }
+  }
+
+  &__facilities {
+    margin-bottom: 28rpx;
+
+    .section-title {
+      display: block;
+      font-size: 30rpx;
+      font-weight: 700;
+      color: #2D3436;
+      margin-bottom: 16rpx;
+    }
+
+    .facility-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12rpx;
+    }
+
+    .facility-chip {
+      padding: 10rpx 24rpx;
+      background: #FFFFFF;
+      border: 2rpx solid #F0EDEB;
+      border-radius: 9999rpx;
+      font-size: 24rpx;
+      color: #636E72;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12rpx;
+    margin-bottom: 28rpx;
+
+    .tag-chip {
+      padding: 8rpx 24rpx;
+      background: #EFF6EF;
+      border-radius: 9999rpx;
+      font-size: 24rpx;
+      color: #7CB68E;
+    }
+  }
+
+  &__bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(120rpx + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+    gap: 16rpx;
+    box-shadow: 0 -4rpx 16rpx rgba(45, 52, 54, 0.04);
+
+    .bar-call {
+      width: 160rpx;
+      height: 80rpx;
+      background: #EDF4F8;
+      border-radius: 9999rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26rpx;
+      color: #7EB8DA;
+      font-weight: 600;
+    }
+
+    .bar-book {
+      flex: 1;
+      height: 80rpx;
+      background: linear-gradient(135deg, #B8D8BA, #7EB8DA);
+      border-radius: 9999rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 30rpx;
+      font-weight: 600;
+    }
+  }
+}

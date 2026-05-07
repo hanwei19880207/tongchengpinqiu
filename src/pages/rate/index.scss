@@ -1,0 +1,134 @@
+.rate-page {
+  min-height: 100vh;
+  background: #FAF9F7;
+  padding: 40rpx 32rpx;
+  padding-bottom: calc(200rpx + env(safe-area-inset-bottom));
+
+  &__target {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40rpx 0;
+
+    .target-avatar {
+      width: 120rpx;
+      height: 120rpx;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #C3B1E1, #7EB8DA);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48rpx;
+    }
+
+    .target-name {
+      margin-top: 16rpx;
+      font-size: 32rpx;
+      font-weight: 600;
+      color: #2D3436;
+    }
+  }
+
+  &__scores {
+    background: #fff;
+    border-radius: 24rpx;
+    padding: 32rpx;
+    margin-bottom: 32rpx;
+
+    .score-row {
+      display: flex;
+      align-items: center;
+      padding: 24rpx 0;
+      border-bottom: 1rpx solid #F5F5F5;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .score-label {
+      display: flex;
+      align-items: center;
+      width: 180rpx;
+
+      .score-emoji {
+        font-size: 28rpx;
+        margin-right: 8rpx;
+      }
+
+      .score-text {
+        font-size: 26rpx;
+        color: #2D3436;
+      }
+    }
+
+    .score-dots {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8rpx;
+
+      .dot {
+        width: 36rpx;
+        height: 36rpx;
+        border-radius: 50%;
+        background: #EAEAEA;
+        transition: all 0.2s;
+
+        &--active {
+          background: linear-gradient(135deg, #7EB8DA, #C3B1E1);
+        }
+      }
+    }
+
+    .score-num {
+      width: 60rpx;
+      text-align: center;
+      font-size: 28rpx;
+      font-weight: 600;
+      color: #7EB8DA;
+    }
+  }
+
+  &__comment {
+    background: #fff;
+    border-radius: 24rpx;
+    padding: 32rpx;
+    margin-bottom: 32rpx;
+
+    .comment-title {
+      font-size: 26rpx;
+      color: #636E72;
+      margin-bottom: 16rpx;
+    }
+
+    .comment-input {
+      width: 100%;
+      height: 160rpx;
+      font-size: 28rpx;
+      padding: 16rpx;
+      background: #F8F8F8;
+      border-radius: 16rpx;
+    }
+  }
+
+  &__submit {
+    position: fixed;
+    bottom: calc(60rpx + env(safe-area-inset-bottom));
+    left: 32rpx;
+    right: 32rpx;
+    height: 88rpx;
+    border-radius: 44rpx;
+    background: linear-gradient(135deg, #7EB8DA, #C3B1E1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30rpx;
+    font-weight: 600;
+
+    &--disabled {
+      opacity: 0.6;
+    }
+  }
+}

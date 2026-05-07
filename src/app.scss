@@ -1,0 +1,68 @@
+// ============================================
+// 「约球吧」全局设计系统 — 马卡龙配色
+// 柔和、高级、年轻感
+// ============================================
+
+// --- 马卡龙色彩 Token ---
+$color-primary: #7EB8DA;        // 马卡龙蓝（主色，宁静高级）
+$color-secondary: #B8D8BA;      // 马卡龙绿（场馆、健康）
+$color-accent: #F4A7BB;         // 马卡龙粉（社交、点赞）
+$color-lavender: #C3B1E1;       // 马卡龙紫（特殊标记）
+$color-peach: #FADADD;          // 马卡龙桃（轻点缀）
+$color-lemon: #FDE68A;          // 马卡龙黄（徽章、高亮）
+$color-canvas: #FAF9F7;         // 暖灰白画布
+$color-surface: #FFFFFF;        // 卡片白底
+$color-ink: #2D3436;            // 柔黑文字
+$color-body: #636E72;           // 次要文字
+$color-muted: #B2BEC3;          // 辅助文字
+$color-hairline: #F0EDEB;       // 柔和分割线
+$color-success: #A8D8B9;        // 柔和成功绿
+$color-warning: #F9D88D;        // 柔和警告黄
+$color-error: #F1A9A0;          // 柔和错误红
+
+// --- 马卡龙浅底色 ---
+$tint-primary: #EDF4F8;         // 蓝浅底
+$tint-secondary: #EFF6EF;       // 绿浅底
+$tint-accent: #FDF0F3;          // 粉浅底
+$tint-lavender: #F3EFF9;        // 紫浅底
+
+// --- 圆角 ---
+$radius-sm: 12rpx;
+$radius-md: 20rpx;
+$radius-lg: 32rpx;
+$radius-full: 9999rpx;
+
+// --- 间距（8rpx 网格） ---
+$space-xs: 8rpx;
+$space-sm: 16rpx;
+$space-md: 24rpx;
+$space-lg: 32rpx;
+$space-xl: 48rpx;
+$space-2xl: 64rpx;
+
+// --- 字体 ---
+$font-size-xs: 20rpx;
+$font-size-sm: 24rpx;
+$font-size-base: 28rpx;
+$font-size-md: 32rpx;
+$font-size-lg: 36rpx;
+$font-size-xl: 44rpx;
+$font-size-2xl: 56rpx;
+
+// --- 阴影（更柔和） ---
+$shadow-card: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+$shadow-elevated: 0 8rpx 40rpx rgba(45, 52, 54, 0.08);
+
+// --- 全局 Reset ---
+page {
+  background-color: $color-canvas;
+  color: $color-ink;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+view, text, image {
+  box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+.yq-rating {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+
+  &__score {
+    font-weight: 700;
+    color: #7EB8DA;
+  }
+
+  &__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 2rpx;
+  }
+
+  &__stars {
+    color: #F9D88D;
+    font-size: 20rpx;
+  }
+
+  &__count {
+    font-size: 20rpx;
+    color: #B2BEC3;
+  }
+
+  &--large {
+    .yq-rating__score { font-size: 56rpx; }
+    .yq-rating__stars { font-size: 24rpx; }
+    .yq-rating__count { font-size: 24rpx; }
+  }
+
+  &--small {
+    .yq-rating__score { font-size: 36rpx; }
+  }
+}

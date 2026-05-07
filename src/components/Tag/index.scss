@@ -1,0 +1,22 @@
+.yq-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4rpx 16rpx;
+  border-radius: 10rpx;
+  font-size: 22rpx;
+
+  &--primary {
+    background: #EDF4F8;
+    color: #7EB8DA;
+  }
+
+  &--secondary {
+    background: #EFF6EF;
+    color: #7CB68E;
+  }
+
+  &--accent {
+    background: #FDF0F3;
+    color: #E88FA5;
+  }
+}

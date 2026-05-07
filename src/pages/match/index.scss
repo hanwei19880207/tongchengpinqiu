@@ -1,0 +1,266 @@
+.match {
+  padding-bottom: 32rpx;
+
+  // Hero Banner — 马卡龙渐变
+  .match-hero {
+    margin: 24rpx;
+    padding: 36rpx;
+    background: linear-gradient(135deg, #7EB8DA, #C3B1E1, #F4A7BB);
+    border-radius: 28rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hero-content {
+      .hero-title {
+        display: block;
+        font-size: 34rpx;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+      .hero-subtitle {
+        display: block;
+        font-size: 24rpx;
+        color: rgba(255, 255, 255, 0.85);
+        margin-top: 8rpx;
+      }
+    }
+
+    .hero-btn {
+      padding: 16rpx 32rpx;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 9999rpx;
+      color: #FFFFFF;
+      font-size: 26rpx;
+      font-weight: 600;
+      flex-shrink: 0;
+      backdrop-filter: blur(10rpx);
+      border: 2rpx solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  // Filters
+  .filters {
+    display: flex;
+    gap: 12rpx;
+    padding: 0 24rpx;
+    margin-bottom: 24rpx;
+    overflow-x: auto;
+
+    .filter-chip {
+      flex-shrink: 0;
+      padding: 12rpx 28rpx;
+      background: #FFFFFF;
+      border: 2rpx solid #F0EDEB;
+      border-radius: 9999rpx;
+      font-size: 26rpx;
+      color: #636E72;
+
+      &--active {
+        background: #7EB8DA;
+        color: #FFFFFF;
+        border-color: #7EB8DA;
+      }
+
+      &--icon {
+        background: #EFF6EF;
+        color: #7CB68E;
+        border-color: #B8D8BA;
+      }
+    }
+  }
+
+  // Match Cards
+  .match-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24rpx;
+    padding: 0 24rpx;
+  }
+
+  .match-card {
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    overflow: hidden;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+
+    &__image {
+      width: 100%;
+      display: block;
+    }
+
+    &__body {
+      padding: 24rpx;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16rpx;
+    }
+
+    &__title {
+      font-size: 32rpx;
+      font-weight: 700;
+      color: #2D3436;
+    }
+
+    &__level {
+      padding: 6rpx 20rpx;
+      border-radius: 9999rpx;
+      font-size: 22rpx;
+      font-weight: 600;
+
+      &--beginner {
+        background: #EFF6EF;
+        color: #7CB68E;
+      }
+      &--mid {
+        background: #EDF4F8;
+        color: #7EB8DA;
+      }
+      &--advanced {
+        background: #F3EFF9;
+        color: #A58EC6;
+      }
+    }
+
+    &__host {
+      display: flex;
+      align-items: center;
+      gap: 12rpx;
+      margin-bottom: 16rpx;
+
+      .host-avatar {
+        width: 48rpx;
+        height: 48rpx;
+        border-radius: 9999rpx;
+        background: linear-gradient(135deg, #FADADD, #F4A7BB);
+      }
+
+      .host-name {
+        font-size: 26rpx;
+        font-weight: 600;
+        color: #2D3436;
+      }
+
+      .host-level {
+        font-size: 22rpx;
+        color: #B2BEC3;
+        padding: 2rpx 12rpx;
+        background: #F0EDEB;
+        border-radius: 8rpx;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 8rpx;
+      margin-bottom: 16rpx;
+
+      .info-row {
+        display: flex;
+        align-items: center;
+        gap: 8rpx;
+      }
+
+      .info-icon {
+        font-size: 24rpx;
+      }
+
+      .info-text {
+        font-size: 24rpx;
+        color: #636E72;
+      }
+    }
+
+    &__tags {
+      display: flex;
+      gap: 8rpx;
+      margin-bottom: 20rpx;
+
+      .tag-item {
+        padding: 4rpx 16rpx;
+        background: #F0EDEB;
+        border-radius: 10rpx;
+        font-size: 22rpx;
+        color: #B2BEC3;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      padding-top: 20rpx;
+      border-top: 2rpx solid #F0EDEB;
+
+      .footer-left {
+        display: flex;
+        align-items: baseline;
+
+        .fee {
+          font-size: 36rpx;
+          font-weight: 700;
+          color: #7EB8DA;
+        }
+        .fee-unit {
+          font-size: 22rpx;
+          color: #B2BEC3;
+          margin-left: 4rpx;
+        }
+      }
+
+      .footer-right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 12rpx;
+        margin: 0 24rpx;
+
+        .spots-bar {
+          flex: 1;
+          height: 12rpx;
+          background: #F0EDEB;
+          border-radius: 9999rpx;
+          overflow: hidden;
+
+          .spots-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #B8D8BA, #7EB8DA);
+            border-radius: 9999rpx;
+          }
+        }
+
+        .spots-text {
+          font-size: 22rpx;
+          color: #B2BEC3;
+          flex-shrink: 0;
+        }
+      }
+
+      .join-btn {
+        padding: 14rpx 40rpx;
+        background: #7EB8DA;
+        border-radius: 9999rpx;
+        color: #FFFFFF;
+        font-size: 26rpx;
+        font-weight: 600;
+        flex-shrink: 0;
+
+        &--joined {
+          background: #F0EDEB;
+          color: #B2BEC3;
+        }
+      }
+    }
+  }
+
+  .empty-state {
+    padding: 80rpx 0;
+    text-align: center;
+    font-size: 28rpx;
+    color: #B2BEC3;
+  }
+}

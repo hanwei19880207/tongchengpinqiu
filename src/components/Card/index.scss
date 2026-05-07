@@ -1,0 +1,10 @@
+.yq-card {
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+  overflow: hidden;
+
+  &--elevated {
+    box-shadow: 0 8rpx 40rpx rgba(45, 52, 54, 0.08);
+  }
+}

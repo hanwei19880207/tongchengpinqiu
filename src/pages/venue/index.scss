@@ -1,0 +1,261 @@
+.venue {
+  padding-bottom: 32rpx;
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    height: 76rpx;
+    padding: 0 28rpx;
+    margin: 24rpx;
+    background: #FFFFFF;
+    border-radius: 9999rpx;
+    box-shadow: 0 2rpx 16rpx rgba(45, 52, 54, 0.04);
+
+    .search-icon {
+      font-size: 28rpx;
+      margin-right: 12rpx;
+    }
+
+    .search-input {
+      flex: 1;
+      font-size: 28rpx;
+      color: #2D3436;
+    }
+
+    .search-location {
+      flex-shrink: 0;
+      padding: 6rpx 16rpx;
+      background: #EFF6EF;
+      border-radius: 9999rpx;
+      font-size: 22rpx;
+      color: #7CB68E;
+    }
+  }
+
+  .quick-filters {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 24rpx 24rpx;
+
+    .qf-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8rpx;
+      padding: 16rpx 20rpx;
+      border-radius: 20rpx;
+
+      &--active {
+        background: #EDF4F8;
+      }
+
+      .qf-icon {
+        font-size: 36rpx;
+      }
+
+      .qf-label {
+        font-size: 22rpx;
+        color: #636E72;
+      }
+
+      &--active .qf-label {
+        color: #7EB8DA;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .venue-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24rpx;
+    padding: 0 24rpx;
+  }
+
+  .venue-card {
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    overflow: hidden;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+
+    &__hero {
+      position: relative;
+      height: 300rpx;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 16rpx;
+      left: 16rpx;
+      right: 16rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__badge {
+      display: flex;
+      align-items: center;
+      gap: 8rpx;
+      padding: 8rpx 16rpx;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16rpx;
+      backdrop-filter: blur(10rpx);
+
+      .badge-score {
+        font-size: 32rpx;
+        font-weight: 700;
+        color: #7EB8DA;
+      }
+
+      .badge-label {
+        font-size: 20rpx;
+        color: #636E72;
+      }
+    }
+
+    &__hot {
+      padding: 6rpx 16rpx;
+      background: rgba(244, 167, 187, 0.9);
+      border-radius: 9999rpx;
+      font-size: 22rpx;
+      color: #FFFFFF;
+    }
+
+    &__content {
+      padding: 24rpx;
+    }
+
+    &__name {
+      display: block;
+      font-size: 32rpx;
+      font-weight: 700;
+      color: #2D3436;
+      margin-bottom: 20rpx;
+    }
+
+    &__ratings {
+      display: flex;
+      flex-direction: column;
+      gap: 12rpx;
+      margin-bottom: 20rpx;
+
+      .rating-item {
+        display: flex;
+        align-items: center;
+        gap: 12rpx;
+
+        .rating-label {
+          font-size: 22rpx;
+          color: #B2BEC3;
+          width: 72rpx;
+          flex-shrink: 0;
+        }
+
+        .rating-bar {
+          flex: 1;
+          height: 12rpx;
+          background: #F0EDEB;
+          border-radius: 9999rpx;
+          overflow: hidden;
+
+          .rating-fill {
+            height: 100%;
+            background: #7EB8DA;
+            border-radius: 9999rpx;
+
+            &--green {
+              background: #B8D8BA;
+            }
+
+            &--blue {
+              background: #C3B1E1;
+            }
+          }
+        }
+
+        .rating-num {
+          font-size: 24rpx;
+          font-weight: 700;
+          color: #2D3436;
+          width: 56rpx;
+          text-align: right;
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    &__tags {
+      display: flex;
+      gap: 8rpx;
+      margin-bottom: 20rpx;
+
+      .v-tag {
+        padding: 6rpx 16rpx;
+        background: #EFF6EF;
+        border-radius: 10rpx;
+        font-size: 22rpx;
+        color: #7CB68E;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20rpx;
+      border-top: 2rpx solid #F0EDEB;
+
+      .footer-info {
+        display: flex;
+        gap: 16rpx;
+
+        .venue-distance,
+        .venue-reviews {
+          font-size: 22rpx;
+          color: #B2BEC3;
+        }
+      }
+
+      .footer-action {
+        display: flex;
+        align-items: center;
+        gap: 4rpx;
+
+        .venue-price {
+          font-size: 34rpx;
+          font-weight: 700;
+          color: #7EB8DA;
+        }
+
+        .venue-price-unit {
+          font-size: 22rpx;
+          color: #B2BEC3;
+          margin-right: 16rpx;
+        }
+
+        .book-btn {
+          padding: 12rpx 32rpx;
+          background: #B8D8BA;
+          border-radius: 9999rpx;
+          color: #FFFFFF;
+          font-size: 24rpx;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .empty-state {
+    padding: 80rpx 0;
+    text-align: center;
+    font-size: 28rpx;
+    color: #B2BEC3;
+  }
+}

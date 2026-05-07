@@ -1,0 +1,346 @@
+.profile {
+  padding: 24rpx;
+  padding-bottom: 32rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+
+  .loading {
+    padding: 200rpx 0;
+    text-align: center;
+    color: #B2BEC3;
+    font-size: 28rpx;
+  }
+
+  .login-card {
+    margin-top: 120rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60rpx 40rpx;
+    background: #FFFFFF;
+    border-radius: 28rpx;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+
+    .login-avatar-placeholder {
+      width: 160rpx;
+      height: 160rpx;
+      border-radius: 9999rpx;
+      background: linear-gradient(135deg, #EDF4F8, #C3B1E1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32rpx;
+
+      .login-emoji {
+        font-size: 64rpx;
+      }
+    }
+
+    .login-title {
+      font-size: 36rpx;
+      font-weight: 700;
+      color: #2D3436;
+      margin-bottom: 12rpx;
+    }
+
+    .login-desc {
+      font-size: 26rpx;
+      color: #B2BEC3;
+      margin-bottom: 48rpx;
+      text-align: center;
+    }
+
+    .login-btn {
+      width: 100%;
+      height: 88rpx;
+      background: linear-gradient(135deg, #7EB8DA, #C3B1E1);
+      border-radius: 9999rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 30rpx;
+      font-weight: 600;
+    }
+  }
+
+  // Profile Card
+  .profile-card {
+    background: #FFFFFF;
+    border-radius: 28rpx;
+    overflow: hidden;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+
+    .profile-bg {
+      height: 180rpx;
+      background: linear-gradient(135deg, #7EB8DA, #C3B1E1, #F4A7BB);
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: flex-start;
+      padding: 0 24rpx;
+      margin-top: -52rpx;
+
+      .profile-avatar {
+        width: 128rpx;
+        height: 128rpx;
+        border-radius: 9999rpx;
+        border: 8rpx solid #FFFFFF;
+        flex-shrink: 0;
+        box-shadow: 0 4rpx 20rpx rgba(45, 52, 54, 0.12);
+      }
+
+      .profile-detail {
+        flex: 1;
+        margin-left: 20rpx;
+        margin-top: 60rpx;
+
+        .profile-name {
+          display: block;
+          font-size: 36rpx;
+          font-weight: 700;
+          color: #2D3436;
+        }
+
+        .profile-tags {
+          display: flex;
+          gap: 8rpx;
+          margin-top: 8rpx;
+
+          .p-tag {
+            padding: 4rpx 14rpx;
+            border-radius: 10rpx;
+            font-size: 20rpx;
+
+            &--level {
+              background: #EDF4F8;
+              color: #7EB8DA;
+            }
+
+            &--active {
+              background: #EFF6EF;
+              color: #7CB68E;
+            }
+          }
+        }
+
+        .profile-bio {
+          display: block;
+          font-size: 24rpx;
+          color: #B2BEC3;
+          margin-top: 8rpx;
+        }
+      }
+
+      .edit-btn {
+        margin-top: 60rpx;
+        padding: 10rpx 24rpx;
+        border: 2rpx solid #F0EDEB;
+        border-radius: 9999rpx;
+        font-size: 22rpx;
+        color: #636E72;
+        flex-shrink: 0;
+        background: #FFFFFF;
+      }
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: space-around;
+      padding: 28rpx 24rpx;
+      margin-top: 16rpx;
+
+      .stat-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rpx;
+
+        .stat-icon {
+          font-size: 32rpx;
+        }
+
+        .stat-num {
+          font-size: 36rpx;
+          font-weight: 700;
+          color: #2D3436;
+        }
+
+        .stat-label {
+          font-size: 20rpx;
+          color: #B2BEC3;
+        }
+      }
+    }
+  }
+
+  // Rating Card
+  .rating-card {
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    padding: 28rpx;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+
+    .rating-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24rpx;
+
+      .rating-title {
+        font-size: 28rpx;
+        font-weight: 700;
+        color: #2D3436;
+      }
+
+      .rating-more {
+        font-size: 24rpx;
+        color: #7EB8DA;
+      }
+    }
+
+    .rating-body {
+      display: flex;
+      gap: 32rpx;
+
+      .rating-big {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 160rpx;
+
+        .rating-score {
+          font-size: 68rpx;
+          font-weight: 700;
+          color: #7EB8DA;
+          line-height: 1;
+        }
+
+        .rating-stars {
+          font-size: 22rpx;
+          color: #F9D88D;
+          margin-top: 8rpx;
+        }
+
+        .rating-count {
+          font-size: 18rpx;
+          color: #B2BEC3;
+          margin-top: 4rpx;
+        }
+      }
+
+      .rating-dims {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 16rpx;
+        justify-content: center;
+
+        .dim-row {
+          display: flex;
+          align-items: center;
+          gap: 12rpx;
+
+          .dim-label {
+            font-size: 22rpx;
+            color: #B2BEC3;
+            width: 88rpx;
+            flex-shrink: 0;
+          }
+
+          .dim-bar {
+            flex: 1;
+            height: 12rpx;
+            background: #F0EDEB;
+            border-radius: 9999rpx;
+            overflow: hidden;
+
+            .dim-fill {
+              height: 100%;
+              background: #7EB8DA;
+              border-radius: 9999rpx;
+
+              &--green {
+                background: #B8D8BA;
+              }
+
+              &--blue {
+                background: #C3B1E1;
+              }
+            }
+          }
+
+          .dim-num {
+            font-size: 24rpx;
+            font-weight: 700;
+            color: #2D3436;
+            width: 48rpx;
+            text-align: right;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Menu Card
+  .menu-card {
+    background: #FFFFFF;
+    border-radius: 24rpx;
+    box-shadow: 0 4rpx 24rpx rgba(45, 52, 54, 0.04);
+    overflow: hidden;
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      padding: 30rpx 24rpx;
+      border-bottom: 2rpx solid #F0EDEB;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .menu-icon {
+        font-size: 36rpx;
+        margin-right: 20rpx;
+        width: 44rpx;
+        text-align: center;
+      }
+
+      .menu-label {
+        font-size: 28rpx;
+        color: #2D3436;
+        flex: 1;
+      }
+
+      .menu-desc {
+        font-size: 24rpx;
+        color: #B2BEC3;
+        margin-right: 12rpx;
+      }
+
+      .menu-badge {
+        min-width: 32rpx;
+        height: 32rpx;
+        padding: 0 8rpx;
+        background: #F4A7BB;
+        border-radius: 9999rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18rpx;
+        color: #FFFFFF;
+        margin-right: 12rpx;
+      }
+
+      .menu-arrow {
+        font-size: 32rpx;
+        color: #DFE6E9;
+      }
+    }
+  }
+}
