@@ -1,6 +1,6 @@
 .publish {
   padding: 32rpx;
-  padding-bottom: calc(200rpx + env(safe-area-inset-bottom));
+  padding-bottom: calc(32rpx + env(safe-area-inset-bottom));
   overflow-x: hidden;
 
   .form-section {
@@ -152,10 +152,7 @@
   }
 
   .submit-btn {
-    position: fixed;
-    bottom: calc(60rpx + env(safe-area-inset-bottom));
-    left: 32rpx;
-    right: 32rpx;
+    margin-top: 48rpx;
     height: 96rpx;
     display: flex;
     align-items: center;
